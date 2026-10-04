@@ -1,0 +1,1735 @@
+{
+ "seed": 1337,
+ "val_frac": 0.1,
+ "test_frac": 0.12,
+ "fonts": [
+  {
+   "file": "AdventPro-Italic[wdth,wght].ttf",
+   "split": "train",
+   "family": "adventpro",
+   "category": "SANS_SERIF",
+   "origin": "ofl/adventpro/AdventPro-Italic[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0917a5d65589025f2a752b1b0568f924dac49a065a25b4d60116b3c6d4d9ebae"
+  },
+  {
+   "file": "AdventPro[wdth,wght].ttf",
+   "split": "train",
+   "family": "adventpro",
+   "category": "SANS_SERIF",
+   "origin": "ofl/adventpro/AdventPro[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b60ab2920b89bdc4b7dadfb282cadac6e03833e7a80844f9eac096359b2b9766"
+  },
+  {
+   "file": "Akatab-Black.ttf",
+   "split": "train",
+   "family": "akatab",
+   "category": "SANS_SERIF",
+   "origin": "ofl/akatab/Akatab-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "31ddec2b9ed113d6003368ca61efe3707df5e93804f337aca6d5d24a1f2700e1"
+  },
+  {
+   "file": "Akatab-Regular.ttf",
+   "split": "train",
+   "family": "akatab",
+   "category": "SANS_SERIF",
+   "origin": "ofl/akatab/Akatab-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "7efecab54eb02e1b47087ec1ebbe6ac32b4308ac02e18f71c1f7567ec4d69fb4"
+  },
+  {
+   "file": "AnticSlab-Regular.ttf",
+   "split": "train",
+   "family": "anticslab",
+   "category": "SERIF",
+   "origin": "ofl/anticslab/AnticSlab-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "bea5831a412ccf18bf34612a575d908b7892c4669fa91b80405cba508fc32a56"
+  },
+  {
+   "file": "BBHHegarty-Regular.ttf",
+   "split": "train",
+   "family": "bbhhegarty",
+   "category": "SANS_SERIF",
+   "origin": "ofl/bbhhegarty/BBHHegarty-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "34ce60212aa1d835bf44fd61c9fc24092c9e34c1182dd91f2cbf41f69999af21"
+  },
+  {
+   "file": "Balthazar-Regular.ttf",
+   "split": "train",
+   "family": "balthazar",
+   "category": "SERIF",
+   "origin": "ofl/balthazar/Balthazar-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b495856b693458a99a4fcfe420944b6034afe823eb159e8437b4e8929d5aceaa"
+  },
+  {
+   "file": "Besley-Italic[wght].ttf",
+   "split": "train",
+   "family": "besley",
+   "category": "SERIF",
+   "origin": "ofl/besley/Besley-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "de502a1ab6b06a63982dce8c9e58b3eee8aada175e78d5a4dc0a7b3721f26562"
+  },
+  {
+   "file": "Besley[wght].ttf",
+   "split": "train",
+   "family": "besley",
+   "category": "SERIF",
+   "origin": "ofl/besley/Besley[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "71f352d8859c787631a0978161d48497a72caa69dcae6996d6712a564df86c1e"
+  },
+  {
+   "file": "Blinker-Black.ttf",
+   "split": "train",
+   "family": "blinker",
+   "category": "SANS_SERIF",
+   "origin": "ofl/blinker/Blinker-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "9404723f3a1a2c600c2b1ca8ba3bdaa1fcc348cdcaa94301181f97e368cfff49"
+  },
+  {
+   "file": "Blinker-Regular.ttf",
+   "split": "train",
+   "family": "blinker",
+   "category": "SANS_SERIF",
+   "origin": "ofl/blinker/Blinker-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "2f2da3988c84378f11568885c970c442a7263bce637bd5bd4b02ec064c5753c0"
+  },
+  {
+   "file": "Bytesized-Regular.ttf",
+   "split": "train",
+   "family": "bytesized",
+   "category": "SANS_SERIF",
+   "origin": "ofl/bytesized/Bytesized-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "867b090a29cf5b45378692d3163439bb51875a3ddf4e37dcabf62030d04f1d51"
+  },
+  {
+   "file": "Castoro-Italic[wght].ttf",
+   "split": "train",
+   "family": "castoro",
+   "category": "SERIF",
+   "origin": "ofl/castoro/Castoro-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c1c0e8a708373f46285058a03594c67ccbf3af9c23c329957270153cdbb4b70a"
+  },
+  {
+   "file": "Castoro[wght].ttf",
+   "split": "train",
+   "family": "castoro",
+   "category": "SERIF",
+   "origin": "ofl/castoro/Castoro[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0039f7e09796212bf682e48872d94d82f5a672a79f61c46b4f2d78717af494a7"
+  },
+  {
+   "file": "ChakraPetch-Bold.ttf",
+   "split": "train",
+   "family": "chakrapetch",
+   "category": "SANS_SERIF",
+   "origin": "ofl/chakrapetch/ChakraPetch-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "65fbf76d95651697275e19db4d717c0e95a789ddd3476478b05292104db278a0"
+  },
+  {
+   "file": "ChakraPetch-BoldItalic.ttf",
+   "split": "train",
+   "family": "chakrapetch",
+   "category": "SANS_SERIF",
+   "origin": "ofl/chakrapetch/ChakraPetch-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "bf012ce1894ffcf7d32d3e6548b90df7c40f30161b5cc295eb54ff61c21fab19"
+  },
+  {
+   "file": "ChakraPetch-ExtraLightItalic.ttf",
+   "split": "train",
+   "family": "chakrapetch",
+   "category": "SANS_SERIF",
+   "origin": "ofl/chakrapetch/ChakraPetch-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f927e3d4d9ac40165f30238079fa887056691ac3b3dd5c6a1f4b5e50c3320a88"
+  },
+  {
+   "file": "ChakraPetch-Regular.ttf",
+   "split": "train",
+   "family": "chakrapetch",
+   "category": "SANS_SERIF",
+   "origin": "ofl/chakrapetch/ChakraPetch-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "98fcd638baa5c81ff0316b7538ce330ee3b23b1302726de3526d5933a8ecf986"
+  },
+  {
+   "file": "ClarityCity-Italic[wght].ttf",
+   "split": "train",
+   "family": "claritycity",
+   "category": "SANS_SERIF",
+   "origin": "ofl/claritycity/ClarityCity-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "971485d3de1728c53f15c58773e9aec47ff7aa2e7e779ce785a32463a4d608e7"
+  },
+  {
+   "file": "ClarityCity[wght].ttf",
+   "split": "train",
+   "family": "claritycity",
+   "category": "SANS_SERIF",
+   "origin": "ofl/claritycity/ClarityCity[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "eb7aafb087140dd2fe38612cd82d2b61a18948ad3fd3688b7c4989441e6b942e"
+  },
+  {
+   "file": "Comme[wght].ttf",
+   "split": "train",
+   "family": "comme",
+   "category": "SANS_SERIF",
+   "origin": "ofl/comme/Comme[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c368b2b9152d7c1e7d52f9dd058c2b01bab4dfb30c4b55097787083ef61f82e9"
+  },
+  {
+   "file": "Convergence-Regular.ttf",
+   "split": "train",
+   "family": "convergence",
+   "category": "SANS_SERIF",
+   "origin": "ofl/convergence/Convergence-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "4e17355228610042e6922db7f19d9d87eb99b4f09ba3a12be8a2800bad0e9904"
+  },
+  {
+   "file": "DaysOne-Regular.ttf",
+   "split": "train",
+   "family": "daysone",
+   "category": "SANS_SERIF",
+   "origin": "ofl/daysone/DaysOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "7b5a0e6d88696e43e95f6320613908e53d36ad854b4a18e4a1b8d1c19fdbf1fe"
+  },
+  {
+   "file": "DuruSans-Regular.ttf",
+   "split": "train",
+   "family": "durusans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/durusans/DuruSans-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "edd15a5596318ecc635484f7b4fcb34c6dcaa7be8f85c4d2e9273ad8db688ff0"
+  },
+  {
+   "file": "ElMessiri[wght].ttf",
+   "split": "train",
+   "family": "elmessiri",
+   "category": "SANS_SERIF",
+   "origin": "ofl/elmessiri/ElMessiri[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "5d58d5259d2accccba39cffe12e1226e88b6afc5150e3605eb2a9c2fe06ccab0"
+  },
+  {
+   "file": "EncodeSansSemiExpanded-Black.ttf",
+   "split": "train",
+   "family": "encodesanssemiexpanded",
+   "category": "SANS_SERIF",
+   "origin": "ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "5ccf895878db2154b4a21def75594258e89e7122d05134d56cd37981ea22ff8f"
+  },
+  {
+   "file": "EncodeSansSemiExpanded-Regular.ttf",
+   "split": "train",
+   "family": "encodesanssemiexpanded",
+   "category": "SANS_SERIF",
+   "origin": "ofl/encodesanssemiexpanded/EncodeSansSemiExpanded-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "aa69bcb0adf89d178c82e381ab6b959eca58c861440532cafbcc24e03cdce0ff"
+  },
+  {
+   "file": "FacultyGlyphic-Regular.ttf",
+   "split": "train",
+   "family": "facultyglyphic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/facultyglyphic/FacultyGlyphic-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "27010aebf4430da073b75b8877bc3d3e35bd24d2e4f9403d34418abe94c3d31f"
+  },
+  {
+   "file": "Farro-Bold.ttf",
+   "split": "train",
+   "family": "farro",
+   "category": "SANS_SERIF",
+   "origin": "ofl/farro/Farro-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "7671a5d122d2e303c7ecdbeb0e3ce552ec8ab644484d587e72ac71a06d3d9a07"
+  },
+  {
+   "file": "Farro-Regular.ttf",
+   "split": "train",
+   "family": "farro",
+   "category": "SANS_SERIF",
+   "origin": "ofl/farro/Farro-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "eed5807e2779c1fba1a1627a1d34b0450e4fc6a87200522e2f3e3f617221c82b"
+  },
+  {
+   "file": "Faustina-Italic[wght].ttf",
+   "split": "train",
+   "family": "faustina",
+   "category": "SERIF",
+   "origin": "ofl/faustina/Faustina-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "215b9bf63da0c9584b5a0aa8e2270da6a2b62c1281f5c39089613c3aaeffa2be"
+  },
+  {
+   "file": "Faustina[wght].ttf",
+   "split": "train",
+   "family": "faustina",
+   "category": "SERIF",
+   "origin": "ofl/faustina/Faustina[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "2ce2606f0ee1d493873c24818a391e02606ee76ac924b3d985cbb820c0a53ea5"
+  },
+  {
+   "file": "FiraSans-Black.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasans/FiraSans-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0ab27e9178d7f74898dd26e3a5f10eb7922bb2a88a2903e00796c4f7c7e08cc0"
+  },
+  {
+   "file": "FiraSans-BlackItalic.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasans/FiraSans-BlackItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "81bc0f5fac5b1ba562c1625319676e8202fec01b47e1e09b35db88210c30cf68"
+  },
+  {
+   "file": "FiraSans-ExtraLightItalic.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasans/FiraSans-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f4d66af27c828a269d5df483a488404605957d0f4aeead8ebbc9a20dad24b115"
+  },
+  {
+   "file": "FiraSans-Regular.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasans/FiraSans-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c29556a2719bf613ef3d5e070e40d903a8965d9c081beca1375dc1e6e0f93c23"
+  },
+  {
+   "file": "FiraSansCondensed-Black.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasanscondensed/FiraSansCondensed-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "44a13b01570201ef0ba67a603f227166485ef93d2e1bd5d6e1b60d0be14d0975"
+  },
+  {
+   "file": "FiraSansCondensed-BlackItalic.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasanscondensed/FiraSansCondensed-BlackItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "8ab2cfe67370b7cc37e8ad24619a6b0510e2467a07d6bc41c6b20da4ca2bf963"
+  },
+  {
+   "file": "FiraSansCondensed-ExtraLightItalic.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasanscondensed/FiraSansCondensed-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "43402ba23f72d0bc54b1583eddbdd23b54d367abe979858db8f9398e385dd923"
+  },
+  {
+   "file": "FiraSansCondensed-Regular.ttf",
+   "split": "train",
+   "family": "firasans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/firasanscondensed/FiraSansCondensed-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c67609f14fc9d328442bfffcc31988b0f76e5575cf460fcc1f3dd8e4912fe257"
+  },
+  {
+   "file": "FrancoisOne-Regular.ttf",
+   "split": "train",
+   "family": "francoisone",
+   "category": "SANS_SERIF",
+   "origin": "ofl/francoisone/FrancoisOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "700fb5e4a5b6edb14dde2dcd481e5a9cac14281579cf42500170bae7cddd3609"
+  },
+  {
+   "file": "GasoekOne-Regular.ttf",
+   "split": "train",
+   "family": "gasoekone",
+   "category": "SANS_SERIF",
+   "origin": "ofl/gasoekone/GasoekOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "73a6b8e0d12a56f0a070f19b44a93ae050f98eb926da5d2a7c8d6db92bd8d9c3"
+  },
+  {
+   "file": "Gotu-Regular.ttf",
+   "split": "train",
+   "family": "gotu",
+   "category": "SANS_SERIF",
+   "origin": "ofl/gotu/Gotu-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "766fbfb19d8a0c38814b23c42515ed9dea538fce18d741221eca321d0604a3f5"
+  },
+  {
+   "file": "HindKochi-Bold.ttf",
+   "split": "train",
+   "family": "hindkochi",
+   "category": "SANS_SERIF",
+   "origin": "ofl/hindkochi/HindKochi-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0015eaed80482e33b9cf4c18941e3250915ca5b8bed428b8b0f9d952496f3726"
+  },
+  {
+   "file": "HindKochi-Regular.ttf",
+   "split": "train",
+   "family": "hindkochi",
+   "category": "SANS_SERIF",
+   "origin": "ofl/hindkochi/HindKochi-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "be4ef5af5157c64ab86a758580f9cc41ade446c256fd15070800eb8fcfcdc639"
+  },
+  {
+   "file": "HubotSans-Italic[wdth,wght].ttf",
+   "split": "train",
+   "family": "hubotsans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/hubotsans/HubotSans-Italic[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "785b129a5b9c8f04b4e8883dd26235ef7ae58d862068726a3e254092c28bc829"
+  },
+  {
+   "file": "HubotSans[wdth,wght].ttf",
+   "split": "train",
+   "family": "hubotsans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/hubotsans/HubotSans[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "229c7682f64b499668d2f47ac803bbde0b5a63225326c8659ea436748ab29965"
+  },
+  {
+   "file": "IBMPlexSansDevanagari-Bold.ttf",
+   "split": "train",
+   "family": "ibmplexsansdevanagari",
+   "category": "SANS_SERIF",
+   "origin": "ofl/ibmplexsansdevanagari/IBMPlexSansDevanagari-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "8c1a55530a59f4d3df71e36ed7090e78511cf1e03c32b932c693ae6ac603b38f"
+  },
+  {
+   "file": "IBMPlexSansDevanagari-Regular.ttf",
+   "split": "train",
+   "family": "ibmplexsansdevanagari",
+   "category": "SANS_SERIF",
+   "origin": "ofl/ibmplexsansdevanagari/IBMPlexSansDevanagari-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "9a309796ffbe3b6827591eb4e6e7f13e273c38d37b40d12a5ac695172571e88b"
+  },
+  {
+   "file": "IMFeDPsc28P.ttf",
+   "split": "train",
+   "family": "imfedpsc28p",
+   "category": "SERIF",
+   "origin": "ofl/imfelldoublepicasc/IMFeDPsc28P.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "cde1b1e206b36ef2f74ea4b2bf19786d99e93e1c65775b926701e1141726de81"
+  },
+  {
+   "file": "Imprima-Regular.ttf",
+   "split": "train",
+   "family": "imprima",
+   "category": "SANS_SERIF",
+   "origin": "ofl/imprima/Imprima-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c563e40bc5609b8c7bcc39f93cba05455c0d0b8c43460ff991d2834301609c08"
+  },
+  {
+   "file": "Inconsolata[wdth,wght].ttf",
+   "split": "train",
+   "family": "inconsolata",
+   "category": "SANS_SERIF",
+   "origin": "ofl/inconsolata/Inconsolata[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "23ded25b447074d00659392bf9b1123d89df55cb07b0ad9bfef3366d199b5fcb"
+  },
+  {
+   "file": "InstrumentSerif-Italic.ttf",
+   "split": "train",
+   "family": "instrumentserif",
+   "category": "SERIF",
+   "origin": "ofl/instrumentserif/InstrumentSerif-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "08939b8bdf534afec24ae0ef5e03f948940cd9a8fe08e7fecbad040e62327385"
+  },
+  {
+   "file": "InstrumentSerif-Regular.ttf",
+   "split": "train",
+   "family": "instrumentserif",
+   "category": "SERIF",
+   "origin": "ofl/instrumentserif/InstrumentSerif-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88"
+  },
+  {
+   "file": "Kadwa-Bold.ttf",
+   "split": "train",
+   "family": "kadwa",
+   "category": "SERIF",
+   "origin": "ofl/kadwa/Kadwa-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "4dca4a79280ecc1911deb83cc0441dbd53d65af10a42b07157c7a9f2de1e25cc"
+  },
+  {
+   "file": "Kadwa-Regular.ttf",
+   "split": "train",
+   "family": "kadwa",
+   "category": "SERIF",
+   "origin": "ofl/kadwa/Kadwa-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "2d726feadfadcf1e1eb31d443556b830da66badbb0629e984419d8ddab7e6e9d"
+  },
+  {
+   "file": "KdamThmorPro-Regular.ttf",
+   "split": "train",
+   "family": "kdamthmorpro",
+   "category": "SANS_SERIF",
+   "origin": "ofl/kdamthmorpro/KdamThmorPro-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f3c0eb232ec1ca8991576cd93eb604868830dc201bf71f31fb7fba8cf4441226"
+  },
+  {
+   "file": "LexendPeta[wght].ttf",
+   "split": "train",
+   "family": "lexendpeta",
+   "category": "SANS_SERIF",
+   "origin": "ofl/lexendpeta/LexendPeta[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "48bd753c216bdb19a469a6570a8756f23045c1e46f8d498f6cf1038cbcdc135b"
+  },
+  {
+   "file": "LibreBaskerville-Italic[wght].ttf",
+   "split": "train",
+   "family": "librebaskerville",
+   "category": "SERIF",
+   "origin": "ofl/librebaskerville/LibreBaskerville-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "223959683dc73ec4437bd61fabaa4b3f22209e22855ffd3aee36ba61a5116e97"
+  },
+  {
+   "file": "LibreBaskerville[wght].ttf",
+   "split": "train",
+   "family": "librebaskerville",
+   "category": "SERIF",
+   "origin": "ofl/librebaskerville/LibreBaskerville[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "05a95421961341c5b2556285e8415df9db27dab4f4abe22b446b3c6a8b916c5d"
+  },
+  {
+   "file": "Livvic-Black.ttf",
+   "split": "train",
+   "family": "livvic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/livvic/Livvic-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "69522e784a487191945fa9f9d92d67e64cd5a4bc6e849ae42d5f4a799a8d9b60"
+  },
+  {
+   "file": "Livvic-BlackItalic.ttf",
+   "split": "train",
+   "family": "livvic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/livvic/Livvic-BlackItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "83e66c050786059aeabeb5fb69defab2593df93caedde11746dc6277fbf8e523"
+  },
+  {
+   "file": "Livvic-ExtraLightItalic.ttf",
+   "split": "train",
+   "family": "livvic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/livvic/Livvic-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "a4b62b2c66972bc3faf72a7f635085d69eb0e73fe6c595a2574a2ac8b8d2fd67"
+  },
+  {
+   "file": "Livvic-Regular.ttf",
+   "split": "train",
+   "family": "livvic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/livvic/Livvic-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "778e7577cf8ed8f0a97eb657bbf4d4f05bc0c6e8eb0ac8458f25a0eaa6ca16e8"
+  },
+  {
+   "file": "Mada[wght].ttf",
+   "split": "train",
+   "family": "mada",
+   "category": "SANS_SERIF",
+   "origin": "ofl/mada/Mada[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "bf4d193ee78cea2fd8bdc9e64e5cb7e8a19ff76ab74f97a9a4a0e80f8f4cefde"
+  },
+  {
+   "file": "Martel-Bold.ttf",
+   "split": "train",
+   "family": "martel",
+   "category": "SERIF",
+   "origin": "ofl/martel/Martel-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "072b7259061a99128e50056b081024975dfc6e4c0b265ab99f75bf66bd50c338"
+  },
+  {
+   "file": "Martel-Regular.ttf",
+   "split": "train",
+   "family": "martel",
+   "category": "SERIF",
+   "origin": "ofl/martel/Martel-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b733e56144115d5da6a6415d2971ab97b7262948d172e27309ad00ce9096b876"
+  },
+  {
+   "file": "MerriweatherSans-Italic[wght].ttf",
+   "split": "train",
+   "family": "merriweathersans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/merriweathersans/MerriweatherSans-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "882e6763fa1f35dc03cd61c1e3186dba2408828c807895dfa16875b1242ad59d"
+  },
+  {
+   "file": "MerriweatherSans[wght].ttf",
+   "split": "train",
+   "family": "merriweathersans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/merriweathersans/MerriweatherSans[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "bef90d227eeb5b58e27d0a421df6c5d8df2e6a6d68aa08bdc51faa54f1d997dc"
+  },
+  {
+   "file": "Metrophobic-Regular.ttf",
+   "split": "train",
+   "family": "metrophobic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/metrophobic/Metrophobic-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "34e4ac3257307c28e6dd14f5d77bb296211f0ddd217607228a5375416ed8ac58"
+  },
+  {
+   "file": "Molengo-Regular.ttf",
+   "split": "train",
+   "family": "molengo",
+   "category": "SANS_SERIF",
+   "origin": "ofl/molengo/Molengo-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "179b2472bbc83c90ffe3a64e31e7ce6915d22173ee5073cc4e786e9fc7792d76"
+  },
+  {
+   "file": "Monda[wght].ttf",
+   "split": "train",
+   "family": "monda",
+   "category": "SANS_SERIF",
+   "origin": "ofl/monda/Monda[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c95b63f7612df912adc262cb0ef3e8a6c3e6022beb279d9c2ca01c557aa94b59"
+  },
+  {
+   "file": "Montserrat-Italic[wght].ttf",
+   "split": "train",
+   "family": "montserrat",
+   "category": "SANS_SERIF",
+   "origin": "ofl/montserrat/Montserrat-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "51607f316bc020e59f03cbf51543eecffbea501c0b31d73e5b82927c5cca442c"
+  },
+  {
+   "file": "MontserratUnderline-Italic[wght].ttf",
+   "split": "train",
+   "family": "montserratunderline",
+   "category": "SANS_SERIF",
+   "origin": "ofl/montserratunderline/MontserratUnderline-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "774bbfa2403188cbec3884c8a349f2700d6d2cd1fe81d91751d71bf252026a87"
+  },
+  {
+   "file": "MontserratUnderline[wght].ttf",
+   "split": "train",
+   "family": "montserratunderline",
+   "category": "SANS_SERIF",
+   "origin": "ofl/montserratunderline/MontserratUnderline[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b77c3c339f0a793692f32d53b0cf631a426f6deec94e53e013cb612f87370fcc"
+  },
+  {
+   "file": "Montserrat[wght].ttf",
+   "split": "train",
+   "family": "montserrat",
+   "category": "SANS_SERIF",
+   "origin": "ofl/montserrat/Montserrat[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+  },
+  {
+   "file": "NTR-Regular.ttf",
+   "split": "train",
+   "family": "ntr",
+   "category": "SANS_SERIF",
+   "origin": "ofl/ntr/NTR-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c59000b9a002c2935b19afdceaa3aac9b0edefcfd213e3f64de0b172fda50b1d"
+  },
+  {
+   "file": "Namdhinggo-Bold.ttf",
+   "split": "train",
+   "family": "namdhinggo",
+   "category": "SERIF",
+   "origin": "ofl/namdhinggo/Namdhinggo-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "69523d079c45e6dbc82f9000c505b7a90b0b804cf705cb8864a5031c46b93c61"
+  },
+  {
+   "file": "Namdhinggo-Regular.ttf",
+   "split": "train",
+   "family": "namdhinggo",
+   "category": "SERIF",
+   "origin": "ofl/namdhinggo/Namdhinggo-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fdf20478b42495053869abe4d8a16d273e418e3a343f5261a1e48770912b7e5a"
+  },
+  {
+   "file": "NotoSansBamum[wght].ttf",
+   "split": "train",
+   "family": "notosansbamum",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansbamum/NotoSansBamum[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "ac9c498f2030192040e2c5541302ed428a81184ff4635faacd32417a58d83e53"
+  },
+  {
+   "file": "NotoSansCypriot-Regular.ttf",
+   "split": "train",
+   "family": "notosanscypriot",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanscypriot/NotoSansCypriot-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "80590aed2c4223ee0ca53fda21281236529dcc637451d016248559c83880d14d"
+  },
+  {
+   "file": "NotoSansDuployan-Bold.ttf",
+   "split": "train",
+   "family": "notosansduployan",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansduployan/NotoSansDuployan-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f7766eabbec7c00e50b0e64bf130805f03da77474c203809ceedf1ae96a521db"
+  },
+  {
+   "file": "NotoSansDuployan-Regular.ttf",
+   "split": "train",
+   "family": "notosansduployan",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansduployan/NotoSansDuployan-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "2510875cbe4b602f90446e185b25eff1dc600acbc37e8a7a46bbf352603373be"
+  },
+  {
+   "file": "NotoSansHK[wght].ttf",
+   "split": "train",
+   "family": "notosanshk",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanshk/NotoSansHK[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "76098ee78ec234cd4f8c950742b3f766fea2f8b43d5180d901048f4fc86c6849"
+  },
+  {
+   "file": "NotoSansImperialAramaic-Regular.ttf",
+   "split": "train",
+   "family": "notosansimperialaramaic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansimperialaramaic/NotoSansImperialAramaic-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "51433e25557eac79df4e447e0b6be4a23bcf3680a60432ebb388a13ea82d227d"
+  },
+  {
+   "file": "NotoSansLinearA-Regular.ttf",
+   "split": "train",
+   "family": "notosanslineara",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanslineara/NotoSansLinearA-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f2f281d2bfd685ed2fb9597d77ed50dbe64bc36e0e80acf88b0862f2561e5aa0"
+  },
+  {
+   "file": "NotoSansLycian-Regular.ttf",
+   "split": "train",
+   "family": "notosanslycian",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanslycian/NotoSansLycian-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "81ad6994c822aba066219b06e6e097dcedba449b33c6fe6ceb79c2cdeb88664f"
+  },
+  {
+   "file": "NotoSansMalayalam[wdth,wght].ttf",
+   "split": "train",
+   "family": "notosansmalayalam",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansmalayalam/NotoSansMalayalam[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "312e0e7c3cc15fa09eb42a8f749eeb246b593ed420e3c81aafe8d910c3a6fb56"
+  },
+  {
+   "file": "NotoSansMeroitic-Regular.ttf",
+   "split": "train",
+   "family": "notosansmeroitic",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansmeroitic/NotoSansMeroitic-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0a9920e60a884d517c9385f68bef840d380ea0918b397a02357a882c28acca69"
+  },
+  {
+   "file": "NotoSansMultani-Regular.ttf",
+   "split": "train",
+   "family": "notosansmultani",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansmultani/NotoSansMultani-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fe39d78a4f0acae8e5033ac59aa7af3f8664410c048a3b58b5d76ea44548c090"
+  },
+  {
+   "file": "NotoSansOldHungarian-Regular.ttf",
+   "split": "train",
+   "family": "notosansoldhungarian",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansoldhungarian/NotoSansOldHungarian-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c23b363986fabc168af489c5d4eaf3c10fbb110599ffe6ca3b2eac777aa73079"
+  },
+  {
+   "file": "NotoSansPalmyrene-Regular.ttf",
+   "split": "train",
+   "family": "notosanspalmyrene",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanspalmyrene/NotoSansPalmyrene-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d9cb8aeef761d8f0639bdb182f03048435473f623f7567c9b6477fe320cd8404"
+  },
+  {
+   "file": "NotoSansSiddham-Regular.ttf",
+   "split": "train",
+   "family": "notosanssiddham",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanssiddham/NotoSansSiddham-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "8ae4c893d5df6a4e418e7cd19ad6cc7fb95c7b9e04a772072a102fca74ca0185"
+  },
+  {
+   "file": "NotoSansSunuwar-Regular.ttf",
+   "split": "train",
+   "family": "notosanssunuwar",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanssunuwar/NotoSansSunuwar-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "332bbbcbb64c42ccc0a1b79dfd557b47aa3bd88a8ffab1417dd2f6989ad67f4d"
+  },
+  {
+   "file": "NotoSerifAhom-Regular.ttf",
+   "split": "train",
+   "family": "notoserifahom",
+   "category": "SERIF",
+   "origin": "ofl/notoserifahom/NotoSerifAhom-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "2db70c33f5ef1796753743a87817278094fb031ba05d6b51d359c8cb5929631b"
+  },
+  {
+   "file": "NotoSerifKR[wght].ttf",
+   "split": "train",
+   "family": "notoserifkr",
+   "category": "SERIF",
+   "origin": "ofl/notoserifkr/NotoSerifKR[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "11f8d5de6f1b79195efba3828aaa2ec95c1178f5ae976fb23c8d53250a9938f3"
+  },
+  {
+   "file": "NotoZnamennyMusicalNotation-Regular.ttf",
+   "split": "train",
+   "family": "notoznamennymusicalnotation",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notoznamennymusicalnotation/NotoZnamennyMusicalNotation-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "38b7bd32372d35f7601e8cc485c5b04d0a023c75ecebe9543a7916e3c0626c32"
+  },
+  {
+   "file": "OpenSans-Italic[wdth,wght].ttf",
+   "split": "train",
+   "family": "opensans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/opensans/OpenSans-Italic[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fe269381e992f32e135801740998544d6235061e37c93ec067ad2be3edd5b17b"
+  },
+  {
+   "file": "OpenSans[wdth,wght].ttf",
+   "split": "train",
+   "family": "opensans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/opensans/OpenSans[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "36643644f318a812aab2d2ed3bb98f8cf0872527f835fe9398d95fe6b9adb878"
+  },
+  {
+   "file": "Outfit[wght].ttf",
+   "split": "train",
+   "family": "outfit",
+   "category": "SANS_SERIF",
+   "origin": "ofl/outfit/Outfit[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade"
+  },
+  {
+   "file": "PadyakkeExpandedOne-Regular.ttf",
+   "split": "train",
+   "family": "padyakkeexpandedone",
+   "category": "SERIF",
+   "origin": "ofl/padyakkeexpandedone/PadyakkeExpandedOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fcdc6cb3fc277895c98fc120acaf12d421c911bba768eba2891049b5df225032"
+  },
+  {
+   "file": "PoltawskiNowy-Italic[wght].ttf",
+   "split": "train",
+   "family": "poltawskinowy",
+   "category": "SERIF",
+   "origin": "ofl/poltawskinowy/PoltawskiNowy-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "4524bbb5fe26f853a90994994a0dca8af13da334899389800a5fc80f3482ed4a"
+  },
+  {
+   "file": "PoltawskiNowy[wght].ttf",
+   "split": "train",
+   "family": "poltawskinowy",
+   "category": "SERIF",
+   "origin": "ofl/poltawskinowy/PoltawskiNowy[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "7fd9a33287fa563c2c6d2c2ffb8d9750b453f301c07c9f5077dbf3567aaf024e"
+  },
+  {
+   "file": "ProzaLibre-Bold.ttf",
+   "split": "train",
+   "family": "prozalibre",
+   "category": "SANS_SERIF",
+   "origin": "ofl/prozalibre/ProzaLibre-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "155f135da4859922f840620c299837d88acd6c6273202b1b08e0dbba3a8838d1"
+  },
+  {
+   "file": "ProzaLibre-BoldItalic.ttf",
+   "split": "train",
+   "family": "prozalibre",
+   "category": "SANS_SERIF",
+   "origin": "ofl/prozalibre/ProzaLibre-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "a508154c1aa22dfffc51b21a8568a8509eddb532368da9e7dfae2a85d41f8ecb"
+  },
+  {
+   "file": "ProzaLibre-Italic.ttf",
+   "split": "train",
+   "family": "prozalibre",
+   "category": "SANS_SERIF",
+   "origin": "ofl/prozalibre/ProzaLibre-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b21d2f756992d6e3e049fb79c9d889ac670e975ad1613fe1cea2ad91d856558d"
+  },
+  {
+   "file": "ProzaLibre-Regular.ttf",
+   "split": "train",
+   "family": "prozalibre",
+   "category": "SANS_SERIF",
+   "origin": "ofl/prozalibre/ProzaLibre-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0a8508f0bd14dc0d5accd3f06873560fbbefc16956c135520952de1af0dfe162"
+  },
+  {
+   "file": "Puritan-Bold.ttf",
+   "split": "train",
+   "family": "puritan",
+   "category": "SANS_SERIF",
+   "origin": "ofl/puritan/Puritan-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "64e6d13582c1bc2dcab45f2f7be46362a11d108da84b4480e0339ef9c93486d1"
+  },
+  {
+   "file": "Puritan-BoldItalic.ttf",
+   "split": "train",
+   "family": "puritan",
+   "category": "SANS_SERIF",
+   "origin": "ofl/puritan/Puritan-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "121700e1a92a307b4aaf1e908bd713cc9afe9500d33b5db4f81d0d13df1f64b4"
+  },
+  {
+   "file": "Puritan-Italic.ttf",
+   "split": "train",
+   "family": "puritan",
+   "category": "SANS_SERIF",
+   "origin": "ofl/puritan/Puritan-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "2cb8e3d29b08f21a693ace2ba43deaf030f9191205e067a9f82535d742c18f9e"
+  },
+  {
+   "file": "Puritan-Regular.ttf",
+   "split": "train",
+   "family": "puritan",
+   "category": "SANS_SERIF",
+   "origin": "ofl/puritan/Puritan-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c1bb23393a4b47cee290d4b371dc2ad812e2c806767bad7d2dd2f08c6d9f75ed"
+  },
+  {
+   "file": "Roboto-Italic[wdth,wght].ttf",
+   "split": "train",
+   "family": "roboto",
+   "category": "SANS_SERIF",
+   "origin": "ofl/roboto/Roboto-Italic[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "9725a847af6b460ffca162ae66d20dad48b01876137947180b42d7dcd7887182"
+  },
+  {
+   "file": "Roboto[wdth,wght].ttf",
+   "split": "train",
+   "family": "roboto",
+   "category": "SANS_SERIF",
+   "origin": "ofl/roboto/Roboto[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134"
+  },
+  {
+   "file": "SchibstedGrotesk-Italic[wght].ttf",
+   "split": "train",
+   "family": "schibstedgrotesk",
+   "category": "SANS_SERIF",
+   "origin": "ofl/schibstedgrotesk/SchibstedGrotesk-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b49fedb6f3a2ff9b43e13351888641505dc8e5f300941e597eecbc3f52ba357b"
+  },
+  {
+   "file": "SchibstedGrotesk[wght].ttf",
+   "split": "train",
+   "family": "schibstedgrotesk",
+   "category": "SANS_SERIF",
+   "origin": "ofl/schibstedgrotesk/SchibstedGrotesk[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6ceeadf6be8e1fd7687011c7fa38ed0edd1abe967a0b73d97caec183552e823d"
+  },
+  {
+   "file": "ScoutieSans-Italic[wght].ttf",
+   "split": "train",
+   "family": "scoutiesans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/scoutiesans/ScoutieSans-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "597acccbc7feaf140a2b1805f3374f47b66543ea675e784d9663667a85e04a90"
+  },
+  {
+   "file": "ScoutieSans[wght].ttf",
+   "split": "train",
+   "family": "scoutiesans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/scoutiesans/ScoutieSans[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "277f54254cad18ee85682f23d269f4eb72dbfe53380e53c1a673c954427d9106"
+  },
+  {
+   "file": "Shanti-Regular.ttf",
+   "split": "train",
+   "family": "shanti",
+   "category": "SANS_SERIF",
+   "origin": "ofl/shanti/Shanti-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "cc7320c8c4579293f4389ac391b4189c59d8276c3ac1f3b902bf0b0f0e2e9278"
+  },
+  {
+   "file": "Signika[GRAD,wght].ttf",
+   "split": "train",
+   "family": "signika",
+   "category": "SANS_SERIF",
+   "origin": "ofl/signika/Signika[GRAD,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fae0180ef82a6169d169854595377e1dfa3ab657c96995be8cbf128ffaf07820"
+  },
+  {
+   "file": "SourceSerif4-Italic[opsz,wght].ttf",
+   "split": "train",
+   "family": "sourceserif",
+   "category": "SERIF",
+   "origin": "ofl/sourceserif4/SourceSerif4-Italic[opsz,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "15fbc7e4679489a501998c3669272637a6646388ef7e4bd77eebb5bf967a1f42"
+  },
+  {
+   "file": "SourceSerif4[opsz,wght].ttf",
+   "split": "train",
+   "family": "sourceserif",
+   "category": "SERIF",
+   "origin": "ofl/sourceserif4/SourceSerif4[opsz,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b"
+  },
+  {
+   "file": "SpecialGothicCondensedOne-Regular.ttf",
+   "split": "train",
+   "family": "specialgothiccondensedone",
+   "category": "SANS_SERIF",
+   "origin": "ofl/specialgothiccondensedone/SpecialGothicCondensedOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f77948acc3218b715003475f7739d7be101fb59bd8887182866225c9de2c935f"
+  },
+  {
+   "file": "SpectralSC-Bold.ttf",
+   "split": "train",
+   "family": "spectralsc",
+   "category": "SERIF",
+   "origin": "ofl/spectralsc/SpectralSC-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "ddbd53f4b1fd856f5a9b6f5110c095a4a4f4382bdab6decfd79cffd15656dddc"
+  },
+  {
+   "file": "SpectralSC-BoldItalic.ttf",
+   "split": "train",
+   "family": "spectralsc",
+   "category": "SERIF",
+   "origin": "ofl/spectralsc/SpectralSC-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "66d58379ac57b8cf25c4c7e45290934c39098533d3490259826e1e8f2f294caa"
+  },
+  {
+   "file": "SpectralSC-ExtraLightItalic.ttf",
+   "split": "train",
+   "family": "spectralsc",
+   "category": "SERIF",
+   "origin": "ofl/spectralsc/SpectralSC-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d0f32620ee3604d42417f6388c13cd8f87d80563a9d35a4612bda23d19a1fff6"
+  },
+  {
+   "file": "SpectralSC-Regular.ttf",
+   "split": "train",
+   "family": "spectralsc",
+   "category": "SERIF",
+   "origin": "ofl/spectralsc/SpectralSC-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "11b89ee8eff243c4068a9fc105650f8d90005b288f90c98c6d40fecd85a0306d"
+  },
+  {
+   "file": "StackSansText[wght].ttf",
+   "split": "train",
+   "family": "stacksanstext",
+   "category": "SANS_SERIF",
+   "origin": "ofl/stacksanstext/StackSansText[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6a9be24c1371f9344d5b1f243a08928e6324a6426e9f3b3716a7936ae4751256"
+  },
+  {
+   "file": "SyneMono-Regular.ttf",
+   "split": "train",
+   "family": "synemono",
+   "category": "MONOSPACE",
+   "origin": "ofl/synemono/SyneMono-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b142b088680791725849cc74c54d7937c981de2378583bde72f826bd3eb267dc"
+  },
+  {
+   "file": "TacOne-Regular.ttf",
+   "split": "train",
+   "family": "tacone",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tacone/TacOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0b52bc2a0d4bb3ba187d1da157d18e50fafa7a3158563293445f809c3c515d77"
+  },
+  {
+   "file": "Tinos-Bold.ttf",
+   "split": "train",
+   "family": "tinos",
+   "category": "SERIF",
+   "origin": "ofl/tinos/Tinos-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "393269dbab8899f938db19783eca5eac92eb431f7ae0ab45b8349ca895f1a06b"
+  },
+  {
+   "file": "Tinos-BoldItalic.ttf",
+   "split": "train",
+   "family": "tinos",
+   "category": "SERIF",
+   "origin": "ofl/tinos/Tinos-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "a5de79f0fe863ea0954757acb3d47b3ccd0a930ce3dd5b97230cd3866790a06e"
+  },
+  {
+   "file": "Tinos-Italic.ttf",
+   "split": "train",
+   "family": "tinos",
+   "category": "SERIF",
+   "origin": "ofl/tinos/Tinos-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "5942266ed398b155d7dc23e36833e7ec6be988f2439bdbeb8ef1bede808eaa91"
+  },
+  {
+   "file": "Tinos-Regular.ttf",
+   "split": "train",
+   "family": "tinos",
+   "category": "SERIF",
+   "origin": "ofl/tinos/Tinos-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "60a0e8ef0c04dd5dd69ffe91025fa2ae5836cbd35600a82ba031977557e2cb61"
+  },
+  {
+   "file": "TiroTelugu-Italic.ttf",
+   "split": "train",
+   "family": "tirotelugu",
+   "category": "SERIF",
+   "origin": "ofl/tirotelugu/TiroTelugu-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "8f15489b577de6f135113df186ca09440adeba233999ad345cf16f7fc1bd766b"
+  },
+  {
+   "file": "TiroTelugu-Regular.ttf",
+   "split": "train",
+   "family": "tirotelugu",
+   "category": "SERIF",
+   "origin": "ofl/tirotelugu/TiroTelugu-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "aefd72a31b1a9d726047d3dc34568f0aacc3a5048971f73d3228d4d2a6087240"
+  },
+  {
+   "file": "Truculenta[opsz,wdth,wght].ttf",
+   "split": "train",
+   "family": "truculenta",
+   "category": "SANS_SERIF",
+   "origin": "ofl/truculenta/Truculenta[opsz,wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "08d8abe8590e3fef246801f86ef1ede30f8c7a000500857024a590529c443f3c"
+  },
+  {
+   "file": "Trykker-Regular.ttf",
+   "split": "train",
+   "family": "trykker",
+   "category": "SERIF",
+   "origin": "ofl/trykker/Trykker-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "bb5601709cfa4c0b28725afd45025afc79310738886d89ced9caa36164bd217a"
+  },
+  {
+   "file": "Tuffy-Bold.ttf",
+   "split": "train",
+   "family": "tuffy",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tuffy/Tuffy-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b7327bb4d996039fb42e7d3cb885bc851cc7683521f1c08b485086cb39aedb5f"
+  },
+  {
+   "file": "Tuffy-BoldItalic.ttf",
+   "split": "train",
+   "family": "tuffy",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tuffy/Tuffy-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "03818734e59d18e9daf66887d275f03481a189291e771ee0b758fa1fc1398a2f"
+  },
+  {
+   "file": "Tuffy-Italic.ttf",
+   "split": "train",
+   "family": "tuffy",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tuffy/Tuffy-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "8b2d94ce0067ce36091c25fe2221368f21bba402cb360fd977339d43bf484e87"
+  },
+  {
+   "file": "Tuffy-Regular.ttf",
+   "split": "train",
+   "family": "tuffy",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tuffy/Tuffy-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "e4818f18c471c4a6a7f1d5f80c7a0ef0fd7b95b63364fd48f15768c449d8f958"
+  },
+  {
+   "file": "ValleySans-Italic[wght].ttf",
+   "split": "train",
+   "family": "valleysans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/valleysans/ValleySans-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "7c137f9f13475e3afca891a9f44601b0a54307311c6d7643dc37b0c41b454824"
+  },
+  {
+   "file": "ValleySans[wght].ttf",
+   "split": "train",
+   "family": "valleysans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/valleysans/ValleySans[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fd9f6ded65b97fe6a6d1e747604ce489a47660882250356ad210f2c65df9f9d1"
+  },
+  {
+   "file": "VendSans-Italic[wght].ttf",
+   "split": "train",
+   "family": "vendsans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/vendsans/VendSans-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "1042315d8a89fed420d90f77986d9dd3ca128eb7119a9b7b87f7a71a5a24513a"
+  },
+  {
+   "file": "VendSans[wght].ttf",
+   "split": "train",
+   "family": "vendsans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/vendsans/VendSans[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "2cb848ca14258afcffc47b1e63ab7d562de915f0de5fe7a68079633880565d36"
+  },
+  {
+   "file": "YujiMai-Regular.ttf",
+   "split": "train",
+   "family": "yujimai",
+   "category": "SERIF",
+   "origin": "ofl/yujimai/YujiMai-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "05d83b65204a5de6fc34c222057fc082f8c6e2e44c05a0d28f4189b3e54c54c2"
+  },
+  {
+   "file": "Carlito-Bold.ttf",
+   "split": "unseen_test",
+   "family": "carlito",
+   "category": "SANS_SERIF",
+   "origin": "ofl/carlito/Carlito-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db"
+  },
+  {
+   "file": "Carlito-BoldItalic.ttf",
+   "split": "unseen_test",
+   "family": "carlito",
+   "category": "SANS_SERIF",
+   "origin": "ofl/carlito/Carlito-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b32928186c119599e03ca6a1ffc680fdcb7fac95772f4b95d989cf6cd3861517"
+  },
+  {
+   "file": "Carlito-Italic.ttf",
+   "split": "unseen_test",
+   "family": "carlito",
+   "category": "SANS_SERIF",
+   "origin": "ofl/carlito/Carlito-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0b019225e58d702bfedcbd35c21696769f8ee115cb6343f84c2f240312450d1c"
+  },
+  {
+   "file": "Carlito-Regular.ttf",
+   "split": "unseen_test",
+   "family": "carlito",
+   "category": "SANS_SERIF",
+   "origin": "ofl/carlito/Carlito-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595"
+  },
+  {
+   "file": "Dorsa-Regular.ttf",
+   "split": "unseen_test",
+   "family": "dorsa",
+   "category": "SANS_SERIF",
+   "origin": "ofl/dorsa/Dorsa-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d204db5ceb2d028529f9701fab1bf99a7f6b1f555cda5bffe51072ec1409e3c7"
+  },
+  {
+   "file": "FinlandicaText-Italic[wght].ttf",
+   "split": "unseen_test",
+   "family": "finlandicatext",
+   "category": "SANS_SERIF",
+   "origin": "ofl/finlandicatext/FinlandicaText-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "c31d0464b7283c93808cc7dcb8206ddb0780d6a8d50cf7f6a4fda8ec06fd8bb6"
+  },
+  {
+   "file": "FinlandicaText[wght].ttf",
+   "split": "unseen_test",
+   "family": "finlandicatext",
+   "category": "SANS_SERIF",
+   "origin": "ofl/finlandicatext/FinlandicaText[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6ffe79064e08ec7c3adfdfbd8905aaba7c7286b994b34c143cd9237cb0ab4175"
+  },
+  {
+   "file": "IMFePIsc28P.ttf",
+   "split": "unseen_test",
+   "family": "imfepisc28p",
+   "category": "SERIF",
+   "origin": "ofl/imfelldwpicasc/IMFePIsc28P.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "7fc01c056b20956bf2e84375340a6274332b67f7845cbbb479fe0b90b41f845d"
+  },
+  {
+   "file": "IstokWeb-Bold.ttf",
+   "split": "unseen_test",
+   "family": "istokweb",
+   "category": "SANS_SERIF",
+   "origin": "ofl/istokweb/IstokWeb-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "e8cae1e9a6e9f452059342547ae8ebf58f04f85c04f59d4383109490fef45d69"
+  },
+  {
+   "file": "IstokWeb-BoldItalic.ttf",
+   "split": "unseen_test",
+   "family": "istokweb",
+   "category": "SANS_SERIF",
+   "origin": "ofl/istokweb/IstokWeb-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "546f1b01644176ccf134b97f74cb4bcc8307abfefb0b06ddf10353dab1296a08"
+  },
+  {
+   "file": "IstokWeb-Italic.ttf",
+   "split": "unseen_test",
+   "family": "istokweb",
+   "category": "SANS_SERIF",
+   "origin": "ofl/istokweb/IstokWeb-Italic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d8b61729f5d71eb9db7d64573f9003fd893dfb9f6fc8fba5d915eec02ba85283"
+  },
+  {
+   "file": "IstokWeb-Regular.ttf",
+   "split": "unseen_test",
+   "family": "istokweb",
+   "category": "SANS_SERIF",
+   "origin": "ofl/istokweb/IstokWeb-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "a13c4e6cba8f6d24abf96542d9028cea47411ac65c01e6f85349d7405dee53c6"
+  },
+  {
+   "file": "JockeyOne-Regular.ttf",
+   "split": "unseen_test",
+   "family": "jockeyone",
+   "category": "SANS_SERIF",
+   "origin": "ofl/jockeyone/JockeyOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6331a3e99e240c45e4b5eb99845f5724932157d6a4766f2b4836f7582891ac4a"
+  },
+  {
+   "file": "Krub-Bold.ttf",
+   "split": "unseen_test",
+   "family": "krub",
+   "category": "SANS_SERIF",
+   "origin": "ofl/krub/Krub-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0b8c2684736742e181f48ed7d9b0aed10ac2d4e1e3a02c8346e5300a4a07f100"
+  },
+  {
+   "file": "Krub-BoldItalic.ttf",
+   "split": "unseen_test",
+   "family": "krub",
+   "category": "SANS_SERIF",
+   "origin": "ofl/krub/Krub-BoldItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "b4363ba5369dc7cd1380932d7e4adcdce0f2190ae6ad659dea37cb7a45448d25"
+  },
+  {
+   "file": "Krub-ExtraLightItalic.ttf",
+   "split": "unseen_test",
+   "family": "krub",
+   "category": "SANS_SERIF",
+   "origin": "ofl/krub/Krub-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "bf6139882b5f3dbbfa000844145ee51df7ce3bb4b330943602094558a18fcba6"
+  },
+  {
+   "file": "Krub-Regular.ttf",
+   "split": "unseen_test",
+   "family": "krub",
+   "category": "SANS_SERIF",
+   "origin": "ofl/krub/Krub-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "24e5c4084ee9e878d54e70bfe5fceccf3ae46fd4aae73a794c04df4091f5e69d"
+  },
+  {
+   "file": "Labrada-Italic[wght].ttf",
+   "split": "unseen_test",
+   "family": "labrada",
+   "category": "SERIF",
+   "origin": "ofl/labrada/Labrada-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d5d491f4d6c530707e2cc689a4be4a9b28c45e98012ecf6e040b0ac38ee9b428"
+  },
+  {
+   "file": "Labrada[wght].ttf",
+   "split": "unseen_test",
+   "family": "labrada",
+   "category": "SERIF",
+   "origin": "ofl/labrada/Labrada[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0374729c732da52ad8681bc0a84a7e992cef34dbfc5f681dfdbdf7c5de25617b"
+  },
+  {
+   "file": "LisuBosa-Black.ttf",
+   "split": "unseen_test",
+   "family": "lisubosa",
+   "category": "SERIF",
+   "origin": "ofl/lisubosa/LisuBosa-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "0098f180285dd4bc649e4806fc1c6d4ac8289fee83ca28e81939c3558501135d"
+  },
+  {
+   "file": "LisuBosa-BlackItalic.ttf",
+   "split": "unseen_test",
+   "family": "lisubosa",
+   "category": "SERIF",
+   "origin": "ofl/lisubosa/LisuBosa-BlackItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "ec30db42a6c9aa0f1e37797efccf80f23684d502d8cb78c794f851575412002e"
+  },
+  {
+   "file": "LisuBosa-ExtraLightItalic.ttf",
+   "split": "unseen_test",
+   "family": "lisubosa",
+   "category": "SERIF",
+   "origin": "ofl/lisubosa/LisuBosa-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fe1c6824bbe9d5166b7f6333d46a4fe0db2f682a1aa0255b9a212cec660ecdc5"
+  },
+  {
+   "file": "LisuBosa-Regular.ttf",
+   "split": "unseen_test",
+   "family": "lisubosa",
+   "category": "SERIF",
+   "origin": "ofl/lisubosa/LisuBosa-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d1516e8eacbc05b95b032bff3a5c4ed0cb726ceb3db14a19085bc0c4cc2c64a4"
+  },
+  {
+   "file": "Lusitana-Bold.ttf",
+   "split": "unseen_test",
+   "family": "lusitana",
+   "category": "SERIF",
+   "origin": "ofl/lusitana/Lusitana-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "7ce8affe6a9cf98304d33443f26b172f24230dc2b96d880f98679780e2e181ad"
+  },
+  {
+   "file": "Lusitana-Regular.ttf",
+   "split": "unseen_test",
+   "family": "lusitana",
+   "category": "SERIF",
+   "origin": "ofl/lusitana/Lusitana-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "582ef819effed258c236f4924e2799323f3d474472d50939b817f91022ed1e60"
+  },
+  {
+   "file": "NotoSansLepcha-Regular.ttf",
+   "split": "unseen_test",
+   "family": "notosanslepcha",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanslepcha/NotoSansLepcha-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "9624931ae8f9a8a2a45233e5486fac1a80f333a0b3a25f84d0e2484363914f84"
+  },
+  {
+   "file": "NotoSansOldSouthArabian-Regular.ttf",
+   "split": "unseen_test",
+   "family": "notosansoldsoutharabian",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansoldsoutharabian/NotoSansOldSouthArabian-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "54df22db482aef96a0f4aa7eb9e0a7bc92f4af281dec93ca7d16d03a42ef20a5"
+  },
+  {
+   "file": "NotoSansTagalog-Regular.ttf",
+   "split": "unseen_test",
+   "family": "notosanstagalog",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanstagalog/NotoSansTagalog-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "871a66319d10d1a027eee889f75ea49be0b7d2a4e97acd6bf7f7a0ed1d741aac"
+  },
+  {
+   "file": "Sunflower-Bold.ttf",
+   "split": "unseen_test",
+   "family": "sunflower",
+   "category": "SANS_SERIF",
+   "origin": "ofl/sunflower/Sunflower-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6b033627817f6619433afe82028013dc45a78ff82406b1dbe5b16e1bbc370e0a"
+  },
+  {
+   "file": "Sunflower-Light.ttf",
+   "split": "unseen_test",
+   "family": "sunflower",
+   "category": "SANS_SERIF",
+   "origin": "ofl/sunflower/Sunflower-Light.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "dd9fb97aa9ec1fdb65e0328513d9c54c114fba41decca1d32a1e1ed992e255c5"
+  },
+  {
+   "file": "Kalnia[wdth,wght].ttf",
+   "split": "val",
+   "family": "kalnia",
+   "category": "SERIF",
+   "origin": "ofl/kalnia/Kalnia[wdth,wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "33685d0ec4abcca2736a51a10a6d4ee1aab2e608e6598c6926af9550b86731a4"
+  },
+  {
+   "file": "KiteOne-Regular.ttf",
+   "split": "val",
+   "family": "kiteone",
+   "category": "SANS_SERIF",
+   "origin": "ofl/kiteone/KiteOne-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f482673f99d08cf01d617e871cc49f529ae479c321e1ec7f009419275a2f7b61"
+  },
+  {
+   "file": "Marcellus-Regular.ttf",
+   "split": "val",
+   "family": "marcellus",
+   "category": "SERIF",
+   "origin": "ofl/marcellus/Marcellus-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "1cf0cd10b17d35e852729962cc1ffaffed94514895972458345e2df34abb2f81"
+  },
+  {
+   "file": "Mitr-Bold.ttf",
+   "split": "val",
+   "family": "mitr",
+   "category": "SANS_SERIF",
+   "origin": "ofl/mitr/Mitr-Bold.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "92349c05cd6a35549d0fb3e9b0d7d73059717e212cbda182ee28e5917150bc34"
+  },
+  {
+   "file": "Mitr-Regular.ttf",
+   "split": "val",
+   "family": "mitr",
+   "category": "SANS_SERIF",
+   "origin": "ofl/mitr/Mitr-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "3763923ca8d860f9c06f483f663cd3d8d94e9ed8c2f35a7ce35bb6b13e1219fd"
+  },
+  {
+   "file": "NotoSansGrantha-Regular.ttf",
+   "split": "val",
+   "family": "notosansgrantha",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansgrantha/NotoSansGrantha-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "a3e57ddeeb9763111d0e4bd6440af2c7b2fa6763fe02ca56570d33e2afbf7ffb"
+  },
+  {
+   "file": "NotoSansOsage-Regular.ttf",
+   "split": "val",
+   "family": "notosansosage",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosansosage/NotoSansOsage-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "fb7f7fed310568cceddf3d08cfbb13ccde7b84b1ddd93f9430cb91c2bdd4172d"
+  },
+  {
+   "file": "NotoSansSyriacWestern[wght].ttf",
+   "split": "val",
+   "family": "notosanssyriacwestern",
+   "category": "SANS_SERIF",
+   "origin": "ofl/notosanssyriacwestern/NotoSansSyriacWestern[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "29d375b81b36ab042c543f94b31a9ca4982ee1af02e352a6285fa6a0ce25c5b8"
+  },
+  {
+   "file": "PublicSans-Italic[wght].ttf",
+   "split": "val",
+   "family": "publicsans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/publicsans/PublicSans-Italic[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6ce292b05aa8c66bc644bedff834b4d0ddee9af75c55f98dcb28faa32a81056f"
+  },
+  {
+   "file": "PublicSans[wght].ttf",
+   "split": "val",
+   "family": "publicsans",
+   "category": "SANS_SERIF",
+   "origin": "ofl/publicsans/PublicSans[wght].ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "d75a7dc1a27eb9e336d5b33f55489d2ecb5621bf694d5c43b2415bce2ca830a8"
+  },
+  {
+   "file": "Quando-Regular.ttf",
+   "split": "val",
+   "family": "quando",
+   "category": "SERIF",
+   "origin": "ofl/quando/Quando-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "1c6bab1b4b3bf31a305d3866c3826e04237e8da9d9acfa84f49ab138394e8909"
+  },
+  {
+   "file": "Tomorrow-Black.ttf",
+   "split": "val",
+   "family": "tomorrow",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tomorrow/Tomorrow-Black.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "50f588a001797ba6db023d00c1950cb33c983786d9e809c6e1473669ec2b167e"
+  },
+  {
+   "file": "Tomorrow-BlackItalic.ttf",
+   "split": "val",
+   "family": "tomorrow",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tomorrow/Tomorrow-BlackItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "5eb9a4021dac271e6714b20998d5dfcf0b16856bf34044081a072a522b2b6167"
+  },
+  {
+   "file": "Tomorrow-ExtraLightItalic.ttf",
+   "split": "val",
+   "family": "tomorrow",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tomorrow/Tomorrow-ExtraLightItalic.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6629c77344425e9df21fbac82cdf949532ecc197975d93c31c554029aa40abea"
+  },
+  {
+   "file": "Tomorrow-Regular.ttf",
+   "split": "val",
+   "family": "tomorrow",
+   "category": "SANS_SERIF",
+   "origin": "ofl/tomorrow/Tomorrow-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "6bb5534178637f472be093b2df876d580e7cb50df53e1a4b2be9f94070ff1767"
+  },
+  {
+   "file": "WDXLLubrifontJPN-Regular.ttf",
+   "split": "val",
+   "family": "wdxllubrifontjpn",
+   "category": "SANS_SERIF",
+   "origin": "ofl/wdxllubrifontjpn/WDXLLubrifontJPN-Regular.ttf",
+   "commit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+   "sha256": "f7a95e761a2d2c2ee6a90f8536e42ea9e50bae8840695f01704986e2bce34869"
+  }
+ ]
+}

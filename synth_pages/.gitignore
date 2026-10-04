@@ -1,0 +1,16 @@
+# Generated dataset (several GB): YOLO images/labels, CRNN crops, metadata, previews
+/output/
+
+# Fonts: keep the folder layout and fonts_manifest.json, not the font files.
+# Rebuild them with: python tools/split_fonts.py --from-manifest assets/fonts/fonts_manifest.json
+/assets/fonts/*/*
+!/assets/fonts/*/.gitkeep
+local_google_fonts
+
+# Build logs
+*.log
+nohup.out
+
+# Python caches
+__pycache__/
+*.pyc

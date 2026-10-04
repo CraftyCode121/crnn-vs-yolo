@@ -1,0 +1,164 @@
+# charset, canvas size, severity ranges, split sizes, font split, seed
+
+seed: 1337
+workers: 4                      # parallel processes in build.py
+
+paths:
+  fonts:
+    train: assets/fonts/train
+    val: assets/fonts/val
+    unseen_test: assets/fonts/unseen_test
+  stats_file: assets/english_stats.json
+  output_dir: output
+  metadata_file: output/metadata.jsonl
+
+# Space is NOT a class (YOLO infers it from gaps), but it is part of the text.
+charset:
+  lowercase: "abcdefghijklmnopqrstuvwxyz"
+  uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  digits: "0123456789"
+  punctuation: [".", ",", ";", ":", "!", "?", "'", "\"", "-", "(", ")"]   
+  # YOLO class ids follow this order: lowercase, uppercase, digits, punctuation.
+
+# Content is random (no natral words). Every letter has equal probability, so
+# class balance is uniform. Structure (lengths, punctuation) copies English.
+text:
+  # What kind of token a word is
+  word_type_probs:
+    alpha: 0.92                 # letters only
+    numeric: 0.05               # digits only (2026, 37)
+    alnum: 0.03                 # mixed letters and digits (a7x9)
+
+  # Case style of an alpha word. Keeps uppercase classes well represented
+  # while still looking like running text.
+  case_style_probs:
+    lower: 0.70
+    capitalized: 0.15           # First letter upper
+    upper: 0.10                 # ALL CAPS
+    mixed: 0.05                 # random case per letter
+  sentence_initial_capital: true
+
+  # word length distribution, lengths 1..12, must sum to 1
+  word_length_probs: [0.03, 0.17, 0.21, 0.16, 0.11, 0.09, 0.08, 0.06, 0.04, 0.03, 0.01, 0.01]
+  numeric_length_range: [1, 5]
+
+  # sentence and paragraph structure
+  sentence_length_words: {mean: 17, min: 3, max: 45}
+  sentences_per_paragraph: {min: 2, max: 7}
+  comma_prob_per_word: 0.08
+  terminal_punct_probs: {".": 0.90, "?": 0.05, "!": 0.05}
+  other_punct_prob_per_word: 0.02    # ; : ' " - ( ) inserted occasionally
+
+# Lines come from wrapping paragraphs at the column width, not from sampling
+# words per line.
+layout:
+  canvas:                       
+    width_px: 1024
+    min_height_px: 160
+    max_height_px: 1024
+    dpi: 150
+  margins_px: {min: 24, max: 80}
+  column_fraction: [0.55, 1.0]  # text column width as a share of the canvas width
+  paragraphs_per_page: {min: 1, max: 3}
+  max_lines_per_page: 15
+  min_lines_per_page: 1
+  font_size_pt: {min: 10, max: 16}
+  line_spacing: {min: 1.0, max: 1.6}
+  alignment_probs: {left: 0.85, justified: 0.15}
+  paragraph_indent_prob: 0.4
+  paragraph_gap_lines: {min: 0.3, max: 1.2}
+  heading:
+    prob: 0.2
+    words: {min: 1, max: 5}
+    size_multiplier: [1.2, 1.8]
+    bold_prob: 0.7
+    terminal_punct: false
+
+
+fonts:
+  extensions: [".ttf", ".otf"]
+  min_fonts_per_split: {train: 40, val: 8, unseen_test: 10}   # warn if fewer
+  weights:                      # which style files may be used
+    regular: 0.7
+    bold: 0.2
+    italic: 0.1
+
+# Look-alike groups (used by evaluation and font_audit)
+# Normalized CER treats each group as a single class.
+lookalike_groups:
+  - ["I", "l", "1"]
+  - ["O", "0", "o"]
+  - ["c", "C"]
+  - ["s", "S"]
+  - ["v", "V"]
+  - ["w", "W"]
+  - ["x", "X"]
+  - ["z", "Z"]
+
+#    Degradations 
+# Every effect is scaled by a single severity value in [0, 1]:
+#   effective_strength = max * severity
+# Geometric effects run first (image and character masks are transformed
+# together so boxes stay correct), then photometric effects.
+degradation:
+  tiers:                        # used by the three severity test sets
+    clean: 0.0
+    moderate: [0.25, 0.5]
+    hard: [0.7, 1.0]
+
+  geometric:
+    skew_deg:        {enabled: true, max: 7.0}          # rotation, +/-
+    stretch:         {enabled: true, max: 0.15}         # non-uniform scale, +/- fraction
+    warp_px:         {enabled: true, max: 3.0}          # smooth elastic warp amplitude
+    perspective:     {enabled: true, max: 0.02}         # corner jitter as fraction of size
+
+  photometric:
+    paper_texture:   {enabled: true, max: 0.5}          # old-paper grain and yellowing
+    stains:          {enabled: true, max_count: 6, max_opacity: 0.35}
+    uneven_lighting: {enabled: true, max: 0.4}
+    ink_bleed_px:    {enabled: true, max: 0.5}          # slight stroke thickening
+    low_res_scale:   {enabled: true, min_scale: 0.7}    # downscale then upscale
+    blur_sigma:      {enabled: true, max: 1.0}
+    gaussian_noise:  {enabled: true, max_sigma: 15}
+    contrast_loss:   {enabled: true, max: 0.3}
+    jpeg_quality:    {enabled: true, min_quality: 45}   # quality falls from 95 as severity rises
+
+#   Splits 
+# Pages are the unit. Each page is rendered once; test tiers degrade the SAME
+# page at clean / moderate / hard under one page id.
+splits:
+  train:
+    pages: 3500
+    fonts: train
+    severity: {mode: random, range: [0.0, 1.0]}
+  val:
+    pages: 500
+    fonts: val
+    severity: {mode: random, range: [0.0, 1.0]}
+  test_seen:                    # seen fonts, new text
+    pages: 300
+    fonts: train
+    severity: {mode: tiers, tiers: [moderate]}
+  test_unseen_fonts:            # fonts never used in training
+    pages: 300
+    fonts: unseen_test
+    severity: {mode: tiers, tiers: [moderate]}
+  test_tiers:                   # same pages at three severities, seen fonts
+    pages: 300
+    fonts: train
+    severity: {mode: tiers, tiers: [clean, moderate, hard]}
+
+# Small run for checking the pipeline (build.py --pilot)
+pilot:
+  scale: 0.01                   # 1% of each split, at least 20 pages
+
+export:
+  image_format: png
+  yolo:
+    dir: output/yolo
+    # one box per non-space character, class id = index in charset order
+  crnn:
+    dir: output/crnn
+    line_height_px: 48          # lines are resized to this height
+    line_padding_px: 6
+    labels_file: labels.tsv     # columns: image_path, text, font, split, severity
