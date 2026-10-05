@@ -1,0 +1,111 @@
+# Training configuration for CRNN OCR model
+# Compatible with synth_pages / synth_data output format
+
+paths:
+  # Path to the generated crnn directory from synth_pages
+  # The dataset loader reads labels.tsv and image files directly from here.
+  # DO NOT create duplicate data folders in CRNN.
+  data_root: "../synth_pages/output/crnn"
+  labels_file: "../synth_pages/output/crnn/labels.tsv"
+  metadata_file: "../synth_pages/output/metadata.jsonl"
+  
+  # Output directories for trained models and reports
+  checkpoint_dir: "./checkpoints"
+  reports_dir: "./reports"
+  logs_dir: "./logs"
+
+# Character set definitions
+# Follows synth_pages Section 4.1 & 4.2 exactly:
+# 73 base classes: a-z (0-25), A-Z (26-51), 0-9 (52-61), punctuation (62-72)
+# PLUS space ' ' (index 73)
+# PLUS CTC blank symbol (index 74)
+charset:
+  lowercase: "abcdefghijklmnopqrstuvwxyz"
+  uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  digits: "0123456789"
+  punctuation: ".,;:!?'\"-()"
+  include_space: true
+  blank_char: "[blank]"
+
+# Look-alike character groups from synth_pages Section 5 & 9
+# Used for Normalized CER (strict CER vs normalized CER)
+lookalike_groups:
+  - ["I", "l", "1"]
+  - ["O", "0", "o"]
+  - ["c", "C"]
+  - ["s", "S"]
+  - ["v", "V"]
+  - ["w", "W"]
+  - ["x", "X"]
+  - ["z", "Z"]
+
+# Splits definition from labels.tsv 'split' column (which holds folder names)
+splits:
+  train: "train"
+  val: "val"
+  test_seen: "test_seen_moderate"
+  test_unseen_fonts: "test_unseen_fonts_moderate"
+  test_tiers:
+    clean: "test_tiers_clean"
+    moderate: "test_tiers_moderate"
+    hard: "test_tiers_hard"
+
+# Image and sequence pre-processing parameters
+dataset:
+  img_height: 48          # Fixed crop height from synth_pages generator
+  max_img_width: 800      # Lines are padded/scaled up to this width
+  channels: 1             # 1 for grayscale (faster, optimal for OCR) or 3 for RGB
+  max_text_len: 90        # Maximum character length per text line
+  pad_value: 255          # 255 for white background padding
+  normalize: true         # Normalize pixel values to [-1.0, 1.0]
+  augment_train: true     # Apply mild brightness/contrast/blur augmentation on train split
+  num_parallel_calls: 4   # tf.data autotune threads
+  prefetch_buffer: 2      # Prefetch buffer size
+
+# Model architecture hyperparameters
+model:
+  cnn_backbone: "vgg_crnn" # VGG-style conv stack optimized for text lines
+  rnn_units: 256           # Bidirectional LSTM units per direction
+  rnn_layers: 2            # Number of BiLSTM layers
+  dropout_rate: 0.25       # Dropout rate in RNN and dense layers
+  fc_units: 128            # Bottleneck dense projection before RNN
+
+# Training loop hyperparameters
+training:
+  epochs: 60
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: "adam"        # 'adam' or 'adamw'
+  weight_decay: 1e-4
+  clipnorm: 5.0            # Gradient clipping norm (vital for CTC + LSTM numerical stability)
+  
+  # Callbacks & Overfitting Prevention
+  early_stopping:
+    enabled: true
+    monitor: "val_cer"     # Monitor Validation Character Error Rate (or 'val_loss')
+    patience: 10
+    mode: "min"
+    restore_best_weights: true
+
+  checkpointing:
+    enabled: true
+    monitor: "val_cer"
+    save_best_only: true
+    save_weights_only: false
+    mode: "min"
+    filename: "crnn_best_model.keras"
+
+  lr_schedule:
+    enabled: true
+    factor: 0.5
+    patience: 4
+    min_lr: 1e-6
+    monitor: "val_loss"
+    mode: "min"
+
+# Evaluation and Reporting
+reporting:
+  save_epoch_json: true
+  save_summary_markdown: true
+  log_sample_predictions: 10 # Number of decoded lines to display in epoch log
+  eval_batch_limit: null     # Set to an integer to limit validation batches for fast checking, or null for all

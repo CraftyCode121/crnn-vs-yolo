@@ -1,0 +1,13 @@
+# Requirements for CRNN OCR model training with TensorFlow
+tensorflow>=2.15.0
+pyyaml>=6.0
+pandas>=2.0.0
+numpy>=1.23.0
+pillow>=9.5.0
+editdistance>=0.6.2
+tqdm>=4.65.0
+tabulate>=0.9.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.18.0
+
