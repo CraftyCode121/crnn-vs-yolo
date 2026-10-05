@@ -5,14 +5,15 @@ paths:
   # Path to the generated crnn directory from synth_pages
   # The dataset loader reads labels.tsv and image files directly from here.
   # DO NOT create duplicate data folders in CRNN.
-  data_root: "../synth_pages/output/crnn"
-  labels_file: "../synth_pages/output/crnn/labels.tsv"
-  metadata_file: "../synth_pages/output/metadata.jsonl"
+
+  data_root: "synth_pages/output/crnn"
+  labels_file: "synth_pages/output/crnn/labels.tsv"
+  metadata_file: "synth_pages/output/metadata.jsonl"
   
   # Output directories for trained models and reports
-  checkpoint_dir: "./checkpoints"
-  reports_dir: "./reports"
-  logs_dir: "./logs"
+  checkpoint_dir: "./crnn/checkpoints"
+  reports_dir: "./crnn/reports"
+  logs_dir: "./crnn/logs"
 
 # Character set definitions
 # Follows synth_pages Section 4.1 & 4.2 exactly:
